@@ -1,6 +1,6 @@
-import ExpenseItem from "./components/ExpenseItem";
+import ExpenseItem from "./components/Expenses/ExpenseItem";
 
-function App() {
+const App = () =>{
   const expense = [
     {
       id: "1",
