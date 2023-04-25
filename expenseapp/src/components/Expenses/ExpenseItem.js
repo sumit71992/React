@@ -4,9 +4,9 @@ import './ExpenseItem.css';
 
 const ExpenseItem = (props) =>{
     return (
-        <div className="expense-item">
+        <div className="expense-item" id={props.id}>
             <ExpenseDate date={props.date}/>
-            <ExpenseDetails title={props.title} amount={props.amount} location={props.location}/>
+            <ExpenseDetails id={props.id} title={props.title} amount={props.amount} location={props.location}/>
         </div>
     );
 }
