@@ -1,4 +1,5 @@
 import ExpenseItem from "./components/Expenses/ExpenseItem";
+import AddExpense from "./components/NewExpense/AddExpense";
 
 const App = () => {
   const expense = [
@@ -33,6 +34,7 @@ const App = () => {
   ];
   return (
     <div className="App">
+      <AddExpense />
       {expense.map((el) => {
          return <ExpenseItem
             id={el.id}
