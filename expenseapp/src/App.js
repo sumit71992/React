@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ExpenseItem from "./components/Expenses/ExpenseItem";
 import AddExpense from "./components/NewExpense/AddExpense";
+import ExpenseFilter from "./components/Expenses/ExpenseFilter";
 
 const App = () => {
   const expenses = [
@@ -33,15 +34,21 @@ const App = () => {
       location: "Gaya",
     },
   ];
-const [totalExpense, setTotalExpense] = useState(expenses)
+const [totalExpense, setTotalExpense] = useState(expenses);
+const [filteredYear, setFilteredYear] = useState('2023');
   const expenseHandler = (expense)=>{
     const expenseData = [...totalExpense];
     expenseData.push(expense);
     setTotalExpense(expenseData);
   }
+  
+  const filterChangeHandler = selectedYear => {
+    setFilteredYear(selectedYear);
+  };
   return (
     <div className="App">
       <AddExpense onAddExpenseFormData={expenseHandler}/>
+      <ExpenseFilter selected={filteredYear} onChangeFilter={filterChangeHandler}/>
       {totalExpense.map((el) => {
          return <ExpenseItem
             id={el.id}
