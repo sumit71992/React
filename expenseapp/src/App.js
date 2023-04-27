@@ -1,8 +1,9 @@
+import { useState } from "react";
 import ExpenseItem from "./components/Expenses/ExpenseItem";
 import AddExpense from "./components/NewExpense/AddExpense";
 
 const App = () => {
-  const expense = [
+  const expenses = [
     {
       id: "1",
       title: "Food",
@@ -32,10 +33,16 @@ const App = () => {
       location: "Gaya",
     },
   ];
+const [totalExpense, setTotalExpense] = useState(expenses)
+  const expenseHandler = (expense)=>{
+    const expenseData = [...totalExpense];
+    expenseData.push(expense);
+    setTotalExpense(expenseData);
+  }
   return (
     <div className="App">
-      <AddExpense />
-      {expense.map((el) => {
+      <AddExpense onAddExpenseFormData={expenseHandler}/>
+      {totalExpense.map((el) => {
          return <ExpenseItem
             id={el.id}
             title={el.title}
