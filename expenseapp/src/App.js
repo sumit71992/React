@@ -29,7 +29,7 @@ const App = () => {
       id: "4",
       title: "Petrol",
       amount: 1000,
-      date: new Date(2023, 4, 20),
+      date: new Date(2022, 4, 20),
       location: "Gaya",
     },
   ];
