@@ -1,0 +1,15 @@
+.user{
+    background: white;
+    border: 1px solid rgba(255, 255, 255, 0.329);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-top: 1rem;
+}
+.user-list{
+    border: 1px solid rgba(128, 128, 128, 0.151);
+    border-radius: 0.2rem;
+    padding: 0.3rem 0.5rem;
+}

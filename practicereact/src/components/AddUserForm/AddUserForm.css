@@ -1,0 +1,30 @@
+.form{
+    background: white;
+    border: 1px solid rgba(255, 255, 255, 0.329);
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+.form .input{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.input-items{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.input-items input{
+    border: 1px solid rgba(0, 0, 0, 0.315);
+    height: 1.5rem;
+    border-radius: 0.2rem;
+}
+.add-user-button{
+    background: rgba(82, 0, 0, 0.904);
+    border: 1px solid rgb(99, 0, 0);
+    border-radius: 0.3rem;
+    color: white;
+    width: fit-content;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+}
