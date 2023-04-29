@@ -28,3 +28,48 @@
     padding: 0.5rem 2rem;
     cursor: pointer;
 }
+.invalid-section{
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    min-height: 100%;
+    min-width: 100%;
+    max-height: 100vh;
+    max-width: 100vh;
+    background: rgba(0, 0, 0, 0.87);
+    z-index: 99;
+}
+.invalid{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: white;
+    border-radius: 0.5rem;
+}
+.invalid-input h3{
+    background: rgb(80, 0, 0);
+    margin: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem 0 0 0;
+    color: white;
+}
+.invalid-input p{
+    margin: 0;
+    padding: 0.5rem 1rem;
+}
+.invalid-input .inavalid-button{
+    text-align: right;
+    padding: 0.5rem 1rem;
+}
+.invalid-input .inavalid-button button{
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.3rem;
+    background: rgb(80, 0, 0);
+    color: white;
+    border: 1px solid rgb(80, 0, 0);
+    cursor: pointer;
+}
+.none{
+    display: none;
+}
